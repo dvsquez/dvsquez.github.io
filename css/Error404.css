@@ -1,0 +1,61 @@
+@keyframes anim1 {
+	0%{transform: translate(225%, -120%);opacity: 0;}
+	50%{transform: translate(225%, -120%);opacity: 1;}
+	100%{transform: translate(225%, -120%);opacity: 1;}
+}
+@keyframes txt1 {
+	0%{transform: translate(-16%, -250%);opacity: 0;}
+	100%{transform: translate(-16%, -250%);opacity: 1;}
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-image: url(aron.jpg);
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-color: #000000;
+	position: relative;
+
+}
+.Error {
+	width: 1024px;
+	height: 768px;
+	padding-left: 20%;
+}
+.Pale {
+	animation-name: anim1;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out; 
+}
+h1{color: white; 
+	font-size: 150px; 
+	padding-left: 26%;
+	object-position: top;
+	font-family: 'Mansalva', cursive;
+}
+h2{
+	color: white; 
+	font-size: 35px; 
+	text-align: center;
+	animation-name: txt1;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	font-family: 'Mansalva', cursive;
+}
+.boton{
+    background-color: black;
+    border-bottom-color: #FFFF;
+    border-bottom-style:solid;
+    font-family: 'Mansalva', cursive;
+    font size: 100px;
+    color: #FFFF;
+    position:absolute; ;
+    top: 40%;
+    left: 22%;
+    width: 25%;
+}

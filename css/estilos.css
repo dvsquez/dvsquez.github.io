@@ -1,0 +1,125 @@
+*{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth
+}
+
+@keyframes animacion1 {
+	0%{ opacity: 0; transform: translateY(5px);}
+	100%{opacity: 1; transform: translateY(0px);}
+}
+body {
+	background-image: url('../img/dark-green-bg.png');
+	background-attachment: fixed;
+}
+.header1 {
+	position: sticky;
+	left: 0;
+	top:0 !important;
+	z-index: 1 !important;
+}
+nav {	
+ 	background-color: black;
+ 	border-bottom-left-radius: 6px;
+ 	border-bottom-right-radius: 6px;
+ }
+.nombre{
+	font-family: 'Sigmar One', cursive;
+	color: limegreen;
+	font-size: 35px;
+	animation-name: animacion1;
+	animation-duration: 1.5s;
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transition-property: color;
+}
+.nombre:hover {
+	color: #C03C40;
+	transition: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+.navegador{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-size: 25px;
+	animation-name: animacion1;
+	animation-duration: 1.5s;
+	animation-delay: 0.2s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	transition-property: color;
+}
+.navegador:hover {
+	color: #C03C40;
+	transition: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+.title1{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	background-color: #3A4233;
+	width: 25%;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
+}
+.caja1{
+	background-color: #45655A;
+	border-radius: 6px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
+}
+.txt1{
+	font-family: 'Economica', sans-serif;
+	font-size: 20px;
+	background-color: #5DD292;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 1);
+}
+.img1 {
+	border-radius: 6px;
+	background-color:white;
+	padding: 7px;
+	margin-top: 4.5%;
+	background-color: #5DD292;
+	animation-name: animacion1;
+	animation-duration: 1.5s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
+}
+.respuesta {
+	color: white
+}
+footer{
+	width: 100%;
+	background-color: black;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	margin-top: 5%
+}
+footer p{
+	text-align: center;
+	margin-bottom: 0.2%;
+	margin-top: 0%;
+}	
+
+@media screen and (min-width: 600px) and (max-width: 959px){ 
+.nombre {font-size: 35px} 
+.navegador {font-size: 20px}
+.title1 {font-size: 25px}
+.txt1 {font-size: 18px}
+h2 {font-size: 23px}
+.img1 {margin-left: 50% !important}
+}
+
+@media screen and (min-width: 0px) and (max-width: 599px){
+.nombre {font-size: 25px} 
+.navegador {font-size: 10px}
+.title1 {font-size: 20px}
+.txt1 {font-size: 12px}
+h2 {font-size: 15px}
+.img1 {margin-left: 50% !important}
+}
